@@ -37,6 +37,20 @@ set complete=.,w,b,k	" C-n completion: Scan buffers, windows and dictionary
 set termguicolors
 
 " Dev
-let g:python_host_prog  = '/Users/louisun/.pyenv/shims/python'
-let g:python3_host_prog = '/Users/louisun/.pyenv/shims/python'
+let g:python_host_prog  = $HOME . '/.pyenv/shims/python'
+let g:python3_host_prog = $HOME . '/.pyenv/shims/python'
 
+if Is_WSL()
+    let g:clipboard = {
+        \   'name': 'wslclipboard',
+        \   'copy': {
+        \      '+': '/mnt/d/winbin/win32yank.exe -i --crlf',
+        \      '*': '/mnt/d/winbin/win32yank.exe -i --crlf',
+        \    },
+        \   'paste': {
+        \      '+': '/mnt/d/winbin/win32yank.exe -o --lf',
+        \      '*': '/mnt/d/winbin/win32yank.exe -o --lf',
+        \   },
+        \   'cache_enabled': 1,
+        \ }
+endif

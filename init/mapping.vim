@@ -268,7 +268,8 @@ nnoremap <silent> <LocalLeader>fm :Clap maps <CR>
 " registers 搜索寄存器"
 nnoremap <silent> <LocalLeader>fr :<C-u>Clap registers<CR>
 " grep2 全局搜索内容"
-nnoremap <silent> <LocalLeader>ff :<C-u>Clap grep<CR>
+" call clap#installer#download_binary()
+nnoremap <silent> <LocalLeader>ff :<C-u>Clap grep2<CR>
 " mark 搜索标记"
 nnoremap <silent> <LocalLeader>fb :<C-u>Clap marks<CR>
 " command 搜索命令"

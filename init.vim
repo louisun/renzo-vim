@@ -2,6 +2,9 @@ let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 
 command! -nargs=1 LoadFile exec 'source '.s:home.'/'.'<args>'
 
+" function
+LoadFile init/func.vim
+
 " option
 LoadFile init/init.vim
 
