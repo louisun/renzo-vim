@@ -1,18 +1,33 @@
-let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+let g:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 
-command! -nargs=1 LoadFile exec 'source '.s:home.'/'.'<args>'
+command! -nargs=1 LoadFile exec 'source ' . g:home . '/' . '<args>'
+command! -nargs=1 LoadLuaFile exec 'luafile ' . g:home . '/' . '<args>'
 
-" option
-LoadFile init/init.vim
+" function 函数
+LoadFile init/function.vim
+LoadLuaFile lua/function.lua
 
-" map
-LoadFile init/mapping.vim
+" setting 设置
+LoadFile init/setting.vim
 
-" plug
-LoadFile init/pluglist.vim
+" plug 插件列表
+LoadFile init/plugin-list.vim
 
-" theme
-LoadFile init/theme.vim
+" map 通用映射
+LoadFile init/mapping-common.vim
 
-" command
-LoadFile init/command.vim
+" map 插件映射
+LoadFile init/mapping-leader.vim
+LoadFile init/mapping-local-leader.vim
+LoadFile init/mapping-space.vim
+
+" appearance 设置
+LoadFile init/appearance.vim
+
+" lua 脚本
+LoadLuaFile lua/vim-map-viewer.lua
+
+" colorscheme 设置
+if filereadable(g:home . '/init/colorscheme-custom.vim')
+    LoadFile init/colorscheme-custom.vim
+endif

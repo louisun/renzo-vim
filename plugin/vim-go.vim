@@ -28,3 +28,6 @@ let g:go_auto_type_info = 1
 
 " let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 
+
+" 缓冲区保存时自动引入缺失包
+autocmd BufWritePre *.go :GoImports

@@ -1,3 +1,5 @@
 .netrwhist
 .DS_Store
 plug.vim.old
+undodir
+init/colorscheme-custom.vim
