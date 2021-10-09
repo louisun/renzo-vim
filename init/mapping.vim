@@ -311,8 +311,8 @@ nnoremap <silent> <Space>lt :<C-u>ALEToggle<CR>
 nnoremap <silent> <Space>mp :<C-u>MarkdownPreviewToggle<CR>
 
 " nerdcommenter
-nnoremap <silent> <leader>v :call NERDComment('n', 'toggle')<CR>
-xnoremap <silent> <leader>v :call NERDComment('x', 'toggle')<CR>
+nnoremap <silent> <leader>v :call nerdcommenter#Comment('n', 'toggle')<CR>
+xnoremap <silent> <leader>v :call nerdcommenter#Comment('x', 'toggle')<CR>
 
 " easymotion
 " <Leader>f{char} to move to {char}
