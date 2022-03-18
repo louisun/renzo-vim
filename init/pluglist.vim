@@ -17,7 +17,7 @@ Plug 'kristijanhusak/defx-icons'                          " 侧边栏 icon
 
 " -------------------- 功能 ----------------------
 
-Plug 'liuchengxu/vim-clap', { 'do': { -> clap#installer#force_download() }, 'tag': 'v0.23' }
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }          " vim clap
 Plug 'liuchengxu/vim-which-key', { 'on':  ['WhichKey', 'WhichKey!'] } " 按键提示
 Plug 'voldikss/vim-floaterm'                                          " 浮动窗口
 Plug 'airblade/vim-gitgutter'                                         " 侧边栏 git 显示
@@ -34,6 +34,8 @@ Plug 'junegunn/goyo.vim', { 'on': ['Goyo'] }                          " Distract
 Plug 'terryma/vim-smooth-scroll'                                      " 平滑滚动
 Plug 'yianwillis/vimcdoc'                                             " vim 中文文档
 Plug 'rhysd/clever-f.vim'                                             " 扩展 f F t T 跳转
+Plug 'tversteeg/registers.nvim', { 'branch': 'main' }                 " Register
+
 
 " -------------------- Dev ---------------------
 
