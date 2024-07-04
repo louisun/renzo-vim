@@ -40,6 +40,11 @@ let g:leader_key_visual_map.e = { 'name' : '文本编辑' }
 nnoremap <Leader>er :%s/\<<C-r><C-w>\>//g<Left><Left>
 let g:leader_key_map.e.r = '替换光标下单词'
 
+" "z 表示寄存器 z, 然后 y 会将选择的内容复制到寄存器 z，<C-r>z 是插入寄存器 z 的内容
+" xnoremap <Leader>er "zy:%s/<C-r>z//g<Left><Left>
+xnoremap <Leader>er "zy:execute '%s/' . escape(@z, '/\') . '/' . input('Replace with: ') . '/g'<CR>
+let g:leader_key_visual_map.e.r = '替换所选内容'
+
 
 
 " 拖动行到上一行
