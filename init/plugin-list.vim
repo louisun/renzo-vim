@@ -36,6 +36,7 @@ Plug 'junegunn/vim-easy-align'                           " vim-easy-align 文本
 Plug 'junegunn/goyo.vim', { 'on': ['Goyo'] }             " goyo zen mode
 Plug 'terryma/vim-smooth-scroll'                         " vim-smooth-scroll 平滑滚动
 Plug 'vim-autoformat/vim-autoformat'                     " vim-autoformat 代码格式化
+Plug 'lambdalisue/vim-suda'                              " vim-suda sudo 权限（nvim 专用）
 
 
 " -------------------- Dev ---------------------
