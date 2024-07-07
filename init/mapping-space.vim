@@ -40,7 +40,7 @@ nnoremap <Space>gr <esc>:GoRename<CR>
 let g:space_key_map.g.r = 'Go 重命名'
 
 " [vim-go] 直接运行 go 文件
-autocmd FIleType go nmap <Space>xr <Plug>(go-run)
+autocmd FileType go nmap <Space>xr <Plug>(go-run)
 
 " ─────────────────────────⋆⋅☆⋅⋆ ─────────────────────────
 " [startify] back home

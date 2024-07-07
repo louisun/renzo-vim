@@ -50,7 +50,7 @@ Plug 'dense-analysis/ale'                                                       
 Plug 'tpope/vim-fugitive'                                                                                          " vim-fugitive git wrapper
 Plug 'honza/vim-snippets'                                                                                          " vim-snippets 各语言 snippets
 Plug 'louisun/plantuml-previewer.vim', { 'on': ['PlantumlOpen', 'PlantumlSave', 'PlantumlStart', 'PlantumlStop'] } " plantuml-previewer 插件
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}          " markdown 同步预览
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }                                  " markdown 同步预览
 
 
 Plug 'SirVer/ultisnips'   " SirVer/ultisnips 代码片段 engine，下面这两个是一起的

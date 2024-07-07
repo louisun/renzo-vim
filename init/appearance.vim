@@ -8,4 +8,4 @@ let g:embark_terminal_italics = 1
 " miramare
 " nord
 " everforest
-colorscheme nord
+colorscheme everforest
