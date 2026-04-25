@@ -12,9 +12,9 @@ Plug 'sainnhe/everforest'
 
 " -------------------- 窗口 ---------------------
 
-Plug 'Shougo/defx.nvim',  { 'do': ':UpdateRemotePlugins'} " defx 侧边栏目录
-Plug 'kristijanhusak/defx-git'                            " defx-git 侧边栏 git 支持
-Plug 'kristijanhusak/defx-icons'                          " defx-icons 侧边栏 icon
+Plug 'nvim-neo-tree/neo-tree.nvim', { 'branch': 'v3.x' } " neo-tree 文件浏览器
+Plug 'MunifTanjim/nui.nvim'                               " neo-tree UI 依赖
+Plug 'nvim-tree/nvim-web-devicons'                        " neo-tree 图标依赖
 
 " -------------------- 功能 ----------------------
 

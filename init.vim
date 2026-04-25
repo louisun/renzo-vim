@@ -25,6 +25,7 @@ LoadFile init/mapping-space.vim
 LoadFile init/appearance.vim
 
 " lua 脚本
+LoadLuaFile lua/neo-tree-config.lua
 LoadLuaFile lua/vim-map-viewer.lua
 
 " colorscheme 设置

@@ -25,11 +25,9 @@ nnoremap <LocalLeader>cd :execute 'cd ' . g:home<CR>
 let g:local_leader_key_map.c.d = 'cd nvim 配置目录'
 
 " ─────────────────────────⋆⋅☆⋅⋆ ─────────────────────────
-" defx.nvim
-nnoremap <silent> <LocalLeader>ee
-            \ :<C-u>Defx -toggle `getcwd()` -buffer-name=tab`tabpagenr()`<CR>
-nnoremap <silent> <LocalLeader>en
-            \ :<C-u>Defx `getcwd()` -search=`expand('%:p')` -buffer-name=tab`tabpagenr()`<CR>
+" neo-tree
+nnoremap <silent> <LocalLeader>ee :Neotree toggle<CR>
+nnoremap <silent> <LocalLeader>en :Neotree reveal<CR>
 
 
 " ─────────────────────────⋆⋅☆⋅⋆ ─────────────────────────

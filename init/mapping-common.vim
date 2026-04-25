@@ -85,6 +85,10 @@ nnoremap <silent> e] :bnext<CR>
 let g:e_key_map['['] = '上一个 buffer'
 let g:e_key_map[']'] = '下一个 buffer'
 
+noremap <Tab>h <C-w>h
+noremap <Tab>j <C-w>j
+noremap <Tab>k <C-w>k
+noremap <Tab>l <C-w>l
 noremap eh <C-w>h
 noremap ej <C-w>j
 noremap ek <C-w>k
