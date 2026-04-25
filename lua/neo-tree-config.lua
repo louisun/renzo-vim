@@ -8,6 +8,12 @@ vim.api.nvim_create_autocmd('VimEnter', {
 					hide_gitignored = true,
 				},
 				follow_current_file = { enabled = true },
+				window = {
+					mappings = {
+						["e"] = "none",
+						["E"] = "toggle_auto_expand_width",
+					},
+				},
 			},
 		})
 	end,
